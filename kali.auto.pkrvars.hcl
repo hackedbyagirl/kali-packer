@@ -36,6 +36,6 @@ boot_wait = "5s"
 fusion_path = ""
 
 # Export Config
-output_dir = "."
-output_format = "ova"
+output_dir = ""
+#output_format = "ova"
 
