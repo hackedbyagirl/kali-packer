@@ -41,7 +41,7 @@ source "vmware-iso" "kali-base" {
   boot_command          = ["<wait><wait><wait><esc><wait><wait><wait>", "/install.amd/vmlinuz ", "initrd=/install.amd/initrd.gz ", "auto ", "url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg ", "locale=en_US ", "keymap=us<wait> ", "interface=auto ", "hostname=${var.vm_name} ", "domain=${var.domain} ",  "-- <wait> ", "<enter><wait>"]
 
   # Output 
-  format                = var.output_format
+#  format                = var.output_format
 }
 
 
