@@ -101,3 +101,7 @@ variable "fusion_path" {
 variable "output_dir" {
   type = string
 }
+variable "output_format" {
+  type = string
+}
+
