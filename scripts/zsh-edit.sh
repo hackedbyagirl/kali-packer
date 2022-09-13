@@ -26,8 +26,12 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 # Download zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 
-# Web-search
-
 
 # Edit .zshrc and update plugins
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search terraform history command-not-found)
+
+
+
+### Resources
+https://medium.com/@satriajanaka09/setup-zsh-oh-my-zsh-powerlevel10k-on-ubuntu-20-04-c4a4052508fd
+https://github.com/gustavohellwig/gh-zsh
