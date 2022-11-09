@@ -7,7 +7,7 @@ packer {
   }
 }
 
-source "vmware-iso" "kali-base" {
+source "vmware-iso" "kali" {
 # ISO Download and Configuration
   iso_url               = var.vm_iso_url
   iso_checksum          = var.vm_iso_checksum
@@ -46,7 +46,7 @@ source "vmware-iso" "kali-base" {
 
 
 build {
-  sources = ["source.vmware-iso.kali-base"]
+  sources = ["source.vmware-iso.kali"]
   provisioner "shell" {
     script = "scripts/setup.sh"
     execute_command = "echo 'packer' | sudo -S sh -c '{{ .Path }}'"

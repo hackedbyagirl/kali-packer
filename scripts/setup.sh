@@ -3,8 +3,8 @@ set -e
 
 ###################################################################
 # Script Name: setup.sh                                                                                              
-# Project:     Packer-VM                                                                            
-# Author:    	 Brette Geary                                                
+# Project:     kali-packer-image                                                                            
+# Author:      Brette Geary                                                
 # GitHub:      https://github.com/hackedbyagirl
 #
 # Description: This script installs the neccessary dependencies,
@@ -51,16 +51,16 @@ sudo apt-get -y --force-yes install curl wget git zsh vim apt-transport-https ca
 sudo apt-get -qq update
 
 # Setup sudo to allow no-password for "provision" group and add "terraform user"
-#sudo groupadd -r fortalice
-#sudo useradd -m -s /bin/bash fortalice
-#sudo usermod -a -G fortalice fortalice
+#sudo groupadd -r <user>
+#sudo useradd -m -s /bin/bash <user>
+#sudo usermod -a -G <user> <user>
 #sudo cp /etc/sudoers /etc/sudoers.orig
-#echo "fortalice ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/fortalice
+#echo "<user> ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/<user>
 #
 ## Install SSH key 
-#sudo mkdir -p /home/fortalice/.ssh
-#sudo chmod 700 /home/fortalice/.ssh
-#sudo chown -R fortalice /home/fortalice/.ssh
-#sudo usermod --shell /bin/bash fortalice
+#sudo mkdir -p /home/<user>/.ssh
+#sudo chmod 700 /home/<user>/.ssh
+#sudo chown -R <user> /home/<user>/.ssh
+#sudo usermod --shell /bin/bash <user>
 
 

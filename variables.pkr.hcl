@@ -67,8 +67,8 @@ variable "http_dir" {
 variable "boot_wait" {
   type = string
 }
-// VM Connection
 
+// VM Connection
 variable "packer_ssh_user" {
   type = string
   default = "${env("packer_ssh_user")}"
